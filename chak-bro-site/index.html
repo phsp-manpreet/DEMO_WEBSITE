@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chak Bro | Cafe &amp; Lounge, Jalandhar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="lg" viewBox="0 0 100 112">
+ <g class="crown" fill="#f6c928"><path d="M30 24 24 8 38 17 50 3 62 17 76 8 70 24Z"/><circle cx="24" cy="7" r="3"/><circle cx="50" cy="3" r="3"/><circle cx="76" cy="7" r="3"/></g>
+ <path class="wl" fill="#f6c928" d="M20 40C2 54 8 86 42 102 22 84 18 62 28 44Z"/>
+ <path class="wr" fill="#f6c928" d="M80 40C98 54 92 86 58 102 78 84 82 62 72 44Z"/>
+ <path class="shield" d="M30 30H70V70Q70 88 50 98Q30 88 30 70Z" fill="none" stroke="#f6c928" stroke-width="4"/>
+ <text class="cb" x="50" y="70" text-anchor="middle" font-family="Playfair Display,serif" font-weight="900" font-size="34" fill="#f6c928">CB</text>
+</symbol><symbol id="i-cocktail" viewBox="0 0 64 64"><path d="M10 12H54L32 36Z" fill="#c23a4e" stroke="#f6c928" stroke-width="3" stroke-linejoin="round"/><path d="M32 36V54M20 54H44" stroke="#f6c928" stroke-width="3" stroke-linecap="round"/><path d="M40 4 34 24" stroke="#f4f1e8" stroke-width="2.5"/><circle cx="46" cy="14" r="4" fill="#7cb342"/></symbol><symbol id="i-coffee" viewBox="0 0 64 64"><path d="M12 26H44V40Q44 52 28 52Q12 52 12 40Z" fill="#f4f1e8" stroke="#f6c928" stroke-width="3"/><path d="M44 29H50Q56 29 56 36Q56 43 44 43" fill="none" stroke="#f6c928" stroke-width="3"/><path d="M8 58H48" stroke="#f6c928" stroke-width="3" stroke-linecap="round"/><path class="stm" d="M22 8Q17 14 22 18Q27 22 22 24M33 8Q28 14 33 18Q38 22 33 24" fill="none" stroke="#f6c928" stroke-width="2.5" stroke-linecap="round"/></symbol><symbol id="i-pizza" viewBox="0 0 64 64"><path d="M6 14Q32 0 58 14L32 60Z" fill="#f6c928" stroke="#f6c928" stroke-width="3" stroke-linejoin="round"/><path d="M6 14Q32 0 58 14" fill="none" stroke="#c98c00" stroke-width="5"/><circle cx="26" cy="22" r="5" fill="#c23a4e"/><circle cx="40" cy="24" r="4.5" fill="#c23a4e"/><circle cx="32" cy="38" r="5" fill="#c23a4e"/></symbol><symbol id="i-kebab" viewBox="0 0 64 64"><path d="M6 58 58 6" stroke="#f4f1e8" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="44" r="8" fill="#a8532a"/><circle cx="32" cy="32" r="8" fill="#f6c928"/><circle cx="44" cy="20" r="8" fill="#7cb342"/><circle cx="26" cy="38" r="3" fill="#c23a4e"/></symbol><symbol id="i-noodle" viewBox="0 0 64 64"><path d="M6 30H58Q56 54 32 56Q8 54 6 30Z" fill="#c23a4e" stroke="#f6c928" stroke-width="3" stroke-linejoin="round"/><path d="M14 30Q18 20 24 30T34 30T44 30T52 30" fill="none" stroke="#f6c928" stroke-width="3.5" stroke-linecap="round"/><path d="M38 4 28 28M46 6 36 28" stroke="#f4f1e8" stroke-width="3" stroke-linecap="round"/></symbol><symbol id="i-icecream" viewBox="0 0 64 64"><path d="M18 30H46L32 60Z" fill="#c98c00" stroke="#f6c928" stroke-width="3" stroke-linejoin="round"/><circle cx="32" cy="22" r="13" fill="#f4f1e8"/><circle cx="24" cy="28" r="8" fill="#c23a4e"/><circle cx="41" cy="27" r="8" fill="#f6c928"/><circle cx="32" cy="8" r="3.5" fill="#c23a4e"/></symbol></defs></svg>
+
+<header>
+ <a class="brand" href="#home"><img class="lg-h" src="images/logo.png" alt="Chak Bro logo"><b>CHAK BRO</b></a>
+ <button id="burger" aria-label="Menu">&#9776;</button>
+ <nav id="nav">
+  <a href="#home" data-p="home">Home</a><a href="#menu" data-p="menu">Menu</a><a href="#lounge" data-p="lounge">Bar &amp; Lounge</a><a href="#cafe" data-p="cafe">Cafe</a><a href="#gallery" data-p="gallery">Gallery</a><a href="#contact" data-p="contact">Reserve</a>
+ </nav>
+</header>
+
+<main>
+<section class="page" id="home">
+ <div class="hero">
+  <canvas id="dust"></canvas>
+  <div class="herobg"></div>
+  <i class="spark" style="left:12%;animation-delay:0s"></i><i class="spark" style="left:30%;animation-delay:2s"></i><i class="spark" style="left:70%;animation-delay:1s"></i><i class="spark" style="left:88%;animation-delay:3.5s"></i>
+  <div class="logowrap"><img class="ly l-wl" src="images/lg_wl.png" alt=""><img class="ly l-wr" src="images/lg_wr.png" alt=""><img class="ly l-cl" src="images/lg_cl.png" alt=""><img class="ly l-cr" src="images/lg_cr.png" alt=""><img class="ly l-crown" src="images/lg_crown.png" alt=""></div>
+  <h1 id="ttl"></h1>
+  <div class="sub">CAFE &amp; LOUNGE</div>
+  <p class="tag">A multi-cuisine restaurant, bar and cafe in Urban Estate, Jalandhar. A unit of Tawa Parat.</p>
+  <div class="cta"><a class="btn" href="#menu">See the menu</a><a class="btn ghost" href="#contact">Book a table</a></div>
+ </div>
+ <div class="marq"><div id="mq"></div></div>
+ <div class="wrap">
+  <h2 class="reveal">One address, four moods</h2>
+  <p class="lead reveal">Come for a quick coffee, a family dinner, a late night with friends or a drink at the lounge.</p>
+  <div class="grid">
+   <a class="tile reveal" href="#menu"><svg class="ic" viewBox="0 0 64 64"><use href="#i-noodle"/></svg><h3>Multi-cuisine kitchen</h3><p>Punjabi tandoor, Chinese, Continental and Italian from the same kitchen.</p></a>
+   <a class="tile reveal" href="#lounge"><svg class="ic" viewBox="0 0 64 64"><use href="#i-cocktail"/></svg><h3>Bar &amp; lounge</h3><p>Cocktails, mocktails and soft light for long evenings.</p></a>
+   <a class="tile reveal" href="#cafe"><svg class="ic" viewBox="0 0 64 64"><use href="#i-coffee"/></svg><h3>Cafe</h3><p>Coffee, shakes, waffles and a table to sit at all afternoon.</p></a>
+   <a class="tile reveal" href="#contact"><svg class="ic" viewBox="0 0 64 64"><use href="#i-icecream"/></svg><h3>Parties</h3><p>Birthdays, kitty parties and small celebrations. Tell us the date.</p></a>
+  </div>
+ </div>
+<div class="wrap" style="padding-bottom:0"><h2 class="reveal">Made to be shared</h2><p class="lead reveal">A few of the things our kitchen and bar are known for.</p><div class="floaters"><div class="fl" style="animation-delay:0.0s"><svg viewBox="0 0 64 64"><use href="#i-cocktail"/></svg><span>Cocktails</span></div><div class="fl" style="animation-delay:0.35s"><svg viewBox="0 0 64 64"><use href="#i-pizza"/></svg><span>Wood-fired pizza</span></div><div class="fl" style="animation-delay:0.7s"><svg viewBox="0 0 64 64"><use href="#i-kebab"/></svg><span>Tandoori kebabs</span></div><div class="fl" style="animation-delay:1.0499999999999998s"><svg viewBox="0 0 64 64"><use href="#i-noodle"/></svg><span>Wok noodles</span></div><div class="fl" style="animation-delay:1.4s"><svg viewBox="0 0 64 64"><use href="#i-coffee"/></svg><span>Fresh coffee</span></div><div class="fl" style="animation-delay:1.75s"><svg viewBox="0 0 64 64"><use href="#i-icecream"/></svg><span>Sweet endings</span></div></div></div>
+ <div class="wrap" style="padding:50px 5vw 20px"><h2 class="reveal">Around Chak Bro</h2></div><div class="strip"><div class="rail" id="rail"><figure class="art"><img src="images/bar_neon.jpg" alt="Neon sign" loading="lazy"><figcaption>Neon sign</figcaption></figure><figure class="art"><img src="images/interior.jpg" alt="Dining room" loading="lazy"><figcaption>Dining room</figcaption></figure><figure class="art"><img src="images/bar_shelf.jpg" alt="The back bar" loading="lazy"><figcaption>The back bar</figcaption></figure><figure class="art"><img src="images/food.jpg" alt="Starters" loading="lazy"><figcaption>Starters</figcaption></figure><figure class="art"><img src="images/food_bottom.jpg" alt="Tandoori platter" loading="lazy"><figcaption>Tandoori platter</figcaption></figure><figure class="art"><img src="images/bar.jpg" alt="The bar" loading="lazy"><figcaption>The bar</figcaption></figure><figure class="art"><img src="images/lounge_top.jpg" alt="Lamps and green glow" loading="lazy"><figcaption>Lamps and green glow</figcaption></figure><figure class="art"><img src="images/lounge.jpg" alt="Lounge" loading="lazy"><figcaption>Lounge</figcaption></figure><figure class="art"><img src="images/food_mid.jpg" alt="Starters and tandoori" loading="lazy"><figcaption>Starters and tandoori</figcaption></figure><figure class="art"><img src="images/brownie.jpg" alt="Brownie" loading="lazy"><figcaption>Brownie</figcaption></figure><figure class="art"><img src="images/interior_sofa.jpg" alt="Velvet booths" loading="lazy"><figcaption>Velvet booths</figcaption></figure><figure class="art"><img src="images/interior_leaf.jpg" alt="Carved leaf wall" loading="lazy"><figcaption>Carved leaf wall</figcaption></figure><figure class="art"><img src="images/food_top.jpg" alt="Starters up close" loading="lazy"><figcaption>Starters up close</figcaption></figure><figure class="art"><img src="images/lounge_menu.jpg" alt="Our menu on the table" loading="lazy"><figcaption>Our menu on the table</figcaption></figure></div></div>
+ <div class="wrap" style="padding-top:20px"><h2 class="reveal">Step inside</h2><p class="lead reveal">Leaf-carved walls, deep red velvet, a glowing bar and a table full of food. This is what a night at Chak Bro looks like.</p>
+  <div class="mosaic">
+   <figure class="reveal big"><img src="images/interior.jpg" alt="Chak Bro dining area with red velvet seating" loading="lazy"><figcaption>The dining room</figcaption></figure>
+   <figure class="reveal"><img src="images/bar.jpg" alt="Chak Bro bar" loading="lazy"><figcaption>The bar</figcaption></figure>
+   <figure class="reveal"><img src="images/food.jpg" alt="Spread of starters" loading="lazy"><figcaption>Starters spread</figcaption></figure>
+  </div><p style="margin-top:26px"><a class="btn ghost" href="#gallery">See the gallery</a></p></div>
+ <div class="wrap" style="padding-bottom:30px"><h2 class="reveal">Guest favourites</h2><p class="lead reveal">The dishes and drinks most tables order first.</p><div class="grid dgrid"><div class="dish reveal"><span class="top">Popular</span><div class="ring"><img src="images/food_top.jpg" alt="Starters platter" loading="lazy"></div><h3>Starters platter</h3><p>Crisp bites, dips and garnish</p><b>₹349</b></div><div class="dish reveal"><span class="top">Popular</span><div class="ring"><img src="images/food_bottom.jpg" alt="Tandoori and tawa" loading="lazy"></div><h3>Tandoori and tawa</h3><p>Smoky, charred, served hot</p><b>₹399</b></div><div class="dish reveal"><span class="top">Popular</span><div class="ring"><img src="images/brownie.jpg" alt="Hot brownie" loading="lazy"></div><h3>Hot brownie</h3><p>Warm fudge, cold ice cream</p><b>₹229</b></div></div></div>
+ <svg class="wave" viewBox="0 0 2400 60" preserveAspectRatio="none"><path d="M0 30Q150 0 300 30T600 30T900 30T1200 30T1500 30T1800 30T2100 30T2400 30V60H0Z" fill="#22313a"/></svg>
+ <div class="band"><div class="wrap split">
+  <div class="reveal"><h2>From the Tawa Parat family</h2><p class="lead" style="margin-bottom:0">Chak Bro brings the Tawa Parat kitchen's taste to a space built for sitting back. Same honest food, now with a lounge, a bar and a cafe counter.</p>
+   <div class="stats"><div><b data-n="4">0</b>Cuisines</div><div><b data-n="40">0</b>Menu items and counting</div><div><b data-n="7">0</b>Days a week</div></div></div>
+  <div class="frame reveal"><img src="images/lounge.jpg" alt="Chak Bro lounge with green lighting" loading="lazy"></div>
+ </div></div>
+<div class="wrap"><h2 class="reveal" style="text-align:center">What guests say</h2>
+  <div class="quotes"><blockquote class="q on"><p>“Lovely ambience and the starters were perfect for a group.”</p><cite>★★★★★ Sample guest review</cite></blockquote><blockquote class="q"><p>“Best place for a relaxed evening in Urban Estate.”</p><cite>★★★★★ Sample guest review</cite></blockquote><blockquote class="q"><p>“The cafe corner and desserts made our afternoon.”</p><cite>★★★★★ Sample guest review</cite></blockquote></div><div class="dots" id="dots"></div>
+  <div class="hours reveal"><div><b>Today</b><span class="pill" id="openNow"></span></div><div><b>Hours</b>12:00 PM to 11:30 PM (sample, update)</div><div><b>Find us</b>Urban Estate, Phase 2, Jalandhar</div><div><b>Call</b><a href="tel:7528947000">75289-47000</a></div></div></div>
+</section>
+
+<section class="page" id="menu">
+ <div class="ph bg"><h1>Our Menu</h1><p>Pick a category. Prices are samples, update them with your real menu.</p></div>
+ <div class="wrap"><div class="tabs" id="tabs"></div><div class="items" id="items"></div>
+ <div class="duo" style="margin-top:40px"><figure class="reveal"><img src="images/food_bottom.jpg" alt="Tandoori platter" loading="lazy"><figcaption>Tandoori platter</figcaption></figure><figure class="reveal"><img src="images/food_mid.jpg" alt="Starters and tandoori" loading="lazy"><figcaption>Starters and tandoori</figcaption></figure></div>
+ <p class="note">Veg and non-veg options available. Tell us about allergies when ordering.</p></div>
+</section>
+
+<section class="page" id="lounge">
+ <div class="ph bg"><div class="glow"></div><h1>Bar &amp; Lounge</h1><p>Low light, good music, and a bar that takes its time over every glass.</p></div>
+ <div class="wrap">
+  <div class="grid">
+   <div class="tile reveal"><svg class="ic" viewBox="0 0 64 64"><use href="#i-cocktail"/></svg><h3>Signature cocktails</h3><p><b style="color:var(--gold)">Crown Old Fashioned</b> ₹549<br><b style="color:var(--gold)">Chak Mule</b> ₹499<br><b style="color:var(--gold)">Gold Rush</b> ₹529</p></div>
+   <div class="tile reveal"><svg class="ic" viewBox="0 0 64 64"><use href="#i-cocktail"/></svg><h3>Mocktails</h3><p><b style="color:var(--gold)">Virgin Mojito</b> ₹229<br><b style="color:var(--gold)">Blue Lagoon</b> ₹249<br><b style="color:var(--gold)">Spiced Guava</b> ₹239</p></div>
+   <div class="tile reveal"><svg class="ic" viewBox="0 0 64 64"><use href="#i-kebab"/></svg><h3>Bar bites</h3><p><b style="color:var(--gold)">Chilli Paneer Dry</b> ₹329<br><b style="color:var(--gold)">Peri Peri Fries</b> ₹199<br><b style="color:var(--gold)">Tandoori Wings</b> ₹379</p></div>
+  </div>
+  <p class="note">Alcohol is served to guests aged 25 and above with valid ID. Please drink responsibly and do not drive after drinking.</p>
+  <p style="margin-top:26px"><a class="btn" href="#contact">Reserve a lounge table</a></p>
+  <div class="duo" style="margin-top:40px"><figure class="reveal"><img src="images/bar.jpg" alt="Bar shelves" loading="lazy"><figcaption>Back bar</figcaption></figure><figure class="reveal"><img src="images/lounge.jpg" alt="Lounge seating" loading="lazy"><figcaption>Lounge seating</figcaption></figure><figure class="reveal"><img src="images/bar_shelf.jpg" alt="The back bar" loading="lazy"><figcaption>The back bar</figcaption></figure></div>
+ </div>
+</section>
+
+<section class="page" id="cafe">
+ <div class="ph bg"><div class="steam"><i></i><i></i><i></i></div><h1>The Cafe</h1><p>Slow mornings, work-from-cafe afternoons and dessert that does not need an occasion.</p></div>
+ <div class="wrap"><div class="grid">
+  <div class="tile reveal"><svg class="ic" viewBox="0 0 64 64"><use href="#i-coffee"/></svg><h3>Coffee</h3><p>Espresso, cappuccino, cold coffee and hazelnut lattes.</p></div>
+  <div class="tile reveal"><svg class="ic" viewBox="0 0 64 64"><use href="#i-icecream"/></svg><h3>Shakes</h3><p>Oreo, Nutella, brownie and classic mango.</p></div>
+  <div class="tile reveal"><svg class="ic" viewBox="0 0 64 64"><use href="#i-icecream"/></svg><h3>Waffles and pancakes</h3><p>Hot, thick and covered in chocolate.</p></div>
+  <div class="tile reveal"><svg class="ic" viewBox="0 0 64 64"><use href="#i-pizza"/></svg><h3>Sandwiches and pasta</h3><p>Grilled, creamy, cheesy. Light enough for lunch.</p></div>
+ </div><div class="duo" style="margin-top:34px"><figure class="reveal"><img src="images/brownie.jpg" alt="Brownie with ice cream" loading="lazy"><figcaption>Hot brownie</figcaption></figure><figure class="reveal"><img src="images/food.jpg" alt="Food platters" loading="lazy"><figcaption>Share platters</figcaption></figure><figure class="reveal"><img src="images/interior_sofa.jpg" alt="Velvet booths" loading="lazy"><figcaption>Velvet booths</figcaption></figure></div><p style="margin-top:30px"><a class="btn ghost" href="#menu">Full menu</a></p></div>
+</section>
+
+<section class="page" id="gallery">
+ <div class="ph bg"><h1>Gallery</h1><p>A look around. Tap any photo to see it larger.</p></div>
+ <div class="wrap"><div class="gal">
+  <figure class="reveal"><img src="images/interior.jpg" alt="Dining area" loading="lazy"><figcaption>Leaf wall and velvet booths</figcaption></figure>
+  <figure class="reveal"><img src="images/food.jpg" alt="Starters" loading="lazy"><figcaption>Starters and tandoori platters</figcaption></figure>
+  <figure class="reveal"><img src="images/bar.jpg" alt="Bar" loading="lazy"><figcaption>The bar</figcaption></figure>
+  <figure class="reveal"><img src="images/lounge.jpg" alt="Lounge" loading="lazy"><figcaption>Green-lit lounge</figcaption></figure>
+  <figure class="reveal"><img src="images/brownie.jpg" alt="Brownie" loading="lazy"><figcaption>Brownie and ice cream</figcaption></figure><figure class="reveal"><img src="images/bar_neon.jpg" alt="Neon sign" loading="lazy"><figcaption>Neon sign</figcaption></figure><figure class="reveal"><img src="images/interior_sofa.jpg" alt="Velvet booths" loading="lazy"><figcaption>Velvet booths</figcaption></figure><figure class="reveal"><img src="images/food_mid.jpg" alt="Starters and tandoori" loading="lazy"><figcaption>Starters and tandoori</figcaption></figure><figure class="reveal"><img src="images/lounge_top.jpg" alt="Lamps and green glow" loading="lazy"><figcaption>Lamps and green glow</figcaption></figure><figure class="reveal"><img src="images/bar_shelf.jpg" alt="The back bar" loading="lazy"><figcaption>The back bar</figcaption></figure><figure class="reveal"><img src="images/food_bottom.jpg" alt="Tandoori platter" loading="lazy"><figcaption>Tandoori platter</figcaption></figure>
+ <figure class="reveal"><img src="images/interior_leaf.jpg" alt="Carved leaf wall" loading="lazy"><figcaption>Carved leaf wall</figcaption></figure><figure class="reveal"><img src="images/food_top.jpg" alt="Starters up close" loading="lazy"><figcaption>Starters up close</figcaption></figure><figure class="reveal"><img src="images/lounge_menu.jpg" alt="Our menu on the table" loading="lazy"><figcaption>Our menu on the table</figcaption></figure></div></div>
+</section>
+
+<section class="page" id="contact">
+ <div class="ph bg"><h1>Reserve a Table</h1><p>Send your details. This form is front-end only for now; connect it to a backend or WhatsApp later.</p></div>
+ <div class="wrap split" style="align-items:start">
+  <div>
+   <form id="rf">
+    <input required placeholder="Your name" aria-label="Name">
+    <input required type="tel" placeholder="Phone number" aria-label="Phone">
+    <input required type="date" aria-label="Date">
+    <select aria-label="Guests"><option>2 guests</option><option>4 guests</option><option>6 guests</option><option>8 or more</option></select>
+    <select aria-label="Area"><option>Restaurant</option><option>Lounge</option><option>Cafe</option></select>
+    <textarea rows="3" placeholder="Anything we should know?" aria-label="Notes"></textarea>
+    <button class="btn" type="submit">Request booking</button>
+   </form>
+   <div class="ok" id="ok">Thank you. We will call you to confirm your booking.</div>
+  </div>
+  <div class="info">
+   <h2 style="font-size:2rem">Find us</h2>
+   <p><b>Address</b><br>Opp. Petrol Pump, Urban Estate, Phase 2, Jalandhar</p>
+   <p><b>Phone</b><br><a href="tel:7528947000">75289-47000</a></p>
+   <p><b>Instagram</b><br>@chakbro8</p>
+   <p><b>Facebook</b><br>Chakbro</p>
+   <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Chak+Bro+Urban+Estate+Phase+2+Jalandhar" target="_blank" rel="noopener">Open in Maps</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<div id="pgbar"></div><div id="wipe"><span>CHAK BRO</span></div>
+<div id="lb" aria-hidden="true"><img alt=""><span>Close</span></div>
+<a class="fab" href="tel:7528947000" aria-label="Call Chak Bro">📞</a>
+<footer><img class="lg-f" src="images/logo.png" alt="Chak Bro logo"><br><div class="serif" style="color:var(--gold);font-size:1.3rem">CHAK BRO</div>Cafe &amp; Lounge. A unit of Tawa Parat.<br>Opp. Petrol Pump, Urban Estate, Phase 2, Jalandhar</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
