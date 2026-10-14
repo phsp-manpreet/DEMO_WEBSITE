@@ -1,0 +1,44 @@
+:root{--bg:#0c0c0c;--fg:#f6ecd6;--gold:#ffe21a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:Outfit,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.logo{font-family:Marcellus,Georgia,serif}
+.glass{background:rgba(255,255,255,.05);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,226,26,.18)}
+.hero{background:radial-gradient(ellipse at 50% 30%,rgba(224,165,38,.22),transparent 60%),linear-gradient(180deg,rgba(12,12,12,.9),rgba(12,12,12,.72) 55%,#0c0c0c),var(--hero,none);background-size:auto,auto,cover;background-position:center}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 60px,rgba(255,226,26,.03) 60px 61px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.5rem;border-radius:.25rem;font-weight:500;transition:transform .2s,background .2s,color .2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:#111}.btn-gold:hover{background:#fff1a0}
+.btn-line{border:1px solid rgba(255,226,26,.6);color:var(--gold)}.btn-line:hover{background:rgba(255,226,26,.12)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.shimmer{background:linear-gradient(100deg,#ffe21a 30%,#fff7b8 50%,#ffe21a 70%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 5s linear infinite}
+@keyframes sh{to{background-position:-250% 0}}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.in{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.rv.on{opacity:1;transform:none}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(9px)}}
+.bob{animation:bob 1.8s ease-in-out infinite}
+@keyframes ping2{75%,100%{transform:scale(1.7);opacity:0}}
+.pulse::after{content:"";position:absolute;inset:0;border-radius:9999px;background:#25d366;z-index:-1;animation:ping2 2s infinite}
+.tab[aria-selected=true]{color:var(--gold);border-color:var(--gold);background:rgba(255,226,26,.08)}
+.arch{border-radius:999px 999px 0 0}
+#exp::-webkit-scrollbar{display:none}
+h2::after{content:"";display:block;height:2px;width:0;margin-top:14px;background:linear-gradient(90deg,var(--gold),transparent);transition:width 1s .35s}
+h2.on::after{width:96px}h2.text-center::after{margin-inline:auto}
+.btn-gold{position:relative;overflow:hidden}.btn-gold::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.6) 50%,transparent 70%);transform:translateX(-120%)}.btn-gold:hover::after{transform:translateX(120%);transition:transform .7s}
+.glass{transition:border-color .3s,box-shadow .3s,transform .3s}.glass:hover{border-color:rgba(255,226,26,.5);box-shadow:0 14px 40px -18px rgba(255,226,26,.35)}
+.dish img{transition:transform .5s}.dish:hover img{transform:scale(1.1) rotate(2deg)}
+.kb{animation:kb 20s ease-in-out infinite alternate}@keyframes kb{to{transform:scale(1.12)}}
+.ember{position:absolute;bottom:-10px;border-radius:9999px;background:var(--gold);box-shadow:0 0 8px var(--gold);opacity:0;pointer-events:none;animation:up linear infinite}
+@keyframes up{0%{transform:translate(0,0);opacity:0}15%{opacity:.8}100%{transform:translate(var(--dx),-105vh);opacity:0}}
+.marq{animation:mq 30s linear infinite}@keyframes mq{to{transform:translateX(-50%)}}
+#splash{animation:splash 1.4s .2s forwards}@keyframes splash{0%,60%{opacity:1}100%{opacity:0;visibility:hidden}}
+.splash-logo{animation:pop .9s ease-out}@keyframes pop{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.ember,#splash{display:none}h2::after{width:96px}}
+.card-bg{transition:transform .6s}.tile:hover .card-bg{transform:scale(1.08)}
+.tile{overflow:hidden;position:relative}
+.dish{animation:rise .5s both}
+input,select,textarea{background:rgba(255,255,255,.06);border:1px solid rgba(246,236,214,.25);border-radius:.25rem;padding:.7rem .9rem;width:100%;color:var(--fg)}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:none}
+select option{background:#181716}
+.err{color:#ff8a7a;font-size:.8rem;min-height:1rem}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.in{opacity:1;transform:none}html{scroll-behavior:auto!important}}
